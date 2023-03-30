@@ -217,6 +217,6 @@ dlt_pipeline_id = create_dlt_pipeline()
 
 if warehouse_uuid != '' and dlt_pipeline_id != '' and query_id != '':
   new_job_id = create_new_job(dlt_pipeline_id, query_id, warehouse_id)
-  run_that_job(new_job_id)
+  # run_that_job(new_job_id)
 else:
   print(f"Not all elements were created. {warehouse_id=}, {query_id=}, {dlt_pipeline_id=}")
